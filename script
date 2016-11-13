@@ -1,0 +1,4 @@
+#!/bin/bash
+main_class="$(find -name '*.cpp')"
+g++ -std=c++14 -o start_program ${main_class} -lglut -lGLU -lGL -lm
+./start_program
