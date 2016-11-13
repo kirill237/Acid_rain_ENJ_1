@@ -47,13 +47,13 @@ void Draw()
     {
         glColor3f(1.0,0.0,0.0);
         i->draw();
-        /*
+
         char * writable = new char[i->obj_name.size() + 1];
         std::copy(i->obj_name.begin(), i->obj_name.end(), writable);
         writable[i->obj_name.size()] = '\0';
         renderbitmapstring(-screenW/2+i->x_pos,screenH/2-i->y_pos+i->size_y+15,writable);
         delete[] writable;
-        */
+
     }
     //pers.draw(-screenW/2+pers.x_pos,screenH/2-(pers.size_y+pers.y_pos));
     glutSwapBuffers();
@@ -120,9 +120,6 @@ void Init()
 int main(int argc, char *argv[])
 {
     setlocale(LC_CTYPE, "UTF-8");
-
-    char a[256];
-    cout << sizeof(a)*237*237 << endl;
 
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGB|GLUT_DEPTH);
