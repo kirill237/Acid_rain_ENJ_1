@@ -5,10 +5,8 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     enp.cpp \
-    global_data.cpp \
-    freetp.cpp
+    global_data.cpp
 
 HEADERS += \
     enp.h \
-    global_data.h \
-    freetp.h
+    global_data.h
